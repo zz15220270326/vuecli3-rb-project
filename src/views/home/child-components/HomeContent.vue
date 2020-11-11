@@ -5,21 +5,36 @@
       <div class="header">
         <div class="left">全员报表</div>
         <div class="right">
-          <Button icon="ios-refresh-circle-outline" :loading="isLoading" type="primary" shape="circle" />
+          <Button
+            icon="ios-refresh-circle-outline"
+            :loading="isLoading"
+            type="primary"
+            shape="circle"
+          />
         </div>
       </div>
       <Divider />
-      <div v-show="headerTab.length > 0" class="header-tab" >
-        <Button v-for="(item, index) in headerTab" :key="index" :type="item.type"  @click.native="switchTab(index)">
-          {{item.name}}
+      <div v-show="headerTab.length > 0" class="header-tab">
+        <Button
+          v-for="(item, index) in headerTab"
+          :key="index"
+          :type="item.type"
+          @click.native="switchTab(index)"
+        >
+          {{ item.name }}
         </Button>
       </div>
       <div v-show="currentIndex === 0">
-        <SelectMonth />
         <AttendanceTable />
       </div>
       <div v-show="currentIndex === 1">
         <AttdenceReport />
+      </div>
+      <div v-show="currentIndex === 2">
+        <AttdanceRules />
+      </div>
+      <div v-show="currentIndex === 3">
+        <AttdanceTypeSetting />
       </div>
     </Col>
   </div>
@@ -27,16 +42,19 @@
 
 <script>
 // common / content components
-import SelectMonth from '@content/select-month/SelectMonth'
 import AttendanceTable from '@content/attendance-table/AttendanceTable'
+// import AttdanceDetail from '@content/attdance-detail/AttdanceDetail'
 import AttdenceReport from '@content/attadance-report/AttdenceReport'
+import AttdanceRules from '@content/attdance-rules/AttdanceRules'
+import AttdanceTypeSetting from '@content/attdance-type-setting/AttdanceTypeSetting'
 
 export default {
   name: 'HomeContent',
   components: {
-    SelectMonth,
     AttendanceTable,
-    AttdenceReport
+    AttdenceReport,
+    AttdanceRules,
+    AttdanceTypeSetting
   },
   data: () => ({
     headerTab: [
@@ -47,6 +65,14 @@ export default {
       {
         name: '考勤报表',
         type: 'default'
+      },
+      {
+        name: '考勤规则',
+        type: 'default'
+      },
+      {
+        name: '考勤类型设置',
+        type: 'default'
       }
     ],
     days: '',
@@ -54,13 +80,16 @@ export default {
     isLoading: true
   }),
   methods: {
-    switchTab (currentIndex) {
-      this.headerTab.forEach((item, index) => { index === currentIndex ? item.type = 'primary' : item.type = 'default' })
+    switchTab(currentIndex) {
+      this.headerTab.forEach((item, index) => {
+        index === currentIndex
+          ? (item.type = 'primary')
+          : (item.type = 'default')
+      })
       this.currentIndex = currentIndex
     }
   },
-  updated () {
-  }
+  updated() {}
 }
 </script>
 

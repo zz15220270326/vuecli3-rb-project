@@ -1,28 +1,28 @@
 <template>
-<!-- 用卡片实现 -->
-<div class="attdance-reminder">
-  <Card class="card">
-  <div slot="title">
-    <span>{{cardDate}}</span>
-    <Button style="float: right;" type="error" @click.native="closeCard"  icon="el-icon-delete">关闭</Button>
-  </div>
-  <div v-for="(item, index) in detailInfo" :key="index" class="content">
-    <div class="check-time">{{item.checkTime}}</div>
-    <div class="remark">{{item.remark}}</div>
-    <div class="status">
-      <Button :type="item.status === '正常' ? 'info' : 'warning'" round>{{item.status}}</Button>
-    </div>
-  </div>
-</Card>
-</div>
+  <!-- 用卡片实现 -->
+  <Modal :title="cardDate" v-model="isShowCard" :mask-closable="disClosed">
+    <Card v-cloak class="card">
+      <Timeline>
+        <div v-for="(item, index) in detailInfo" :key="index" class="content">
+          <TimelineItem class="check-time">{{ item.checkTime }}</TimelineItem>
+          <div class="remark">{{ item.remark }}</div>
+          <div class="status">
+            <Button :type="item.status === '正常' ? 'info' : 'warning'" round>
+              {{ item.status }}
+            </Button>
+          </div>
+        </div>
+      </Timeline>
+    </Card>
+  </Modal>
 </template>
 
 <script>
 export default {
   name: 'AttdanceReminder',
-  // data: () => ({
-  //   drawer: false
-  // }),
+  data: () => ({
+    disClosed: false
+  }),
   props: {
     detailInfo: {
       type: Array,
@@ -31,37 +31,43 @@ export default {
     cardDate: {
       type: String,
       default: ''
+    },
+    isShowCard: {
+      type: Boolean,
+      default: false
     }
   },
-  methods: {
-    closeCard () {
-      this.$emit('closeCard')
-    }
-  }
+  methods: {}
 }
 </script>
 
 <style lang="less" scoped>
-.attdance-reminder {
+.card {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .card {
-    width: 25rem;
-    .header {
-      display: flex;
+  .header {
+    display: flex;
+  }
+  .content {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .check-time {
+      font-weight: 600;
+      font-size: 1.2rem;
+      padding-top: 0.6rem;
+      text-align: center;
     }
-    .content {
-      width: 100%;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      div {
-        margin-top: 0.8rem;
-        .el-button {
-          opacity: 4 / 5;
-        }
+    .remark {
+      margin-bottom: 1.8rem;
+    }
+    .status {
+      margin-bottom: 1.8rem;
+    }
+    div {
+      margin-top: 0.8rem;
+      .el-button {
+        opacity: 4 / 5;
       }
     }
   }

@@ -46,7 +46,6 @@ export default {
   },
   /* life-hooks */
   created () {
-    console.log('menu created')
   }
 }
 </script>

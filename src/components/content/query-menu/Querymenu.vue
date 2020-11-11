@@ -1,16 +1,16 @@
 <template>
-<div class="query-menu">
-  <slot class="menu" name="menu"></slot>
-  <slot class="input" name="input"></slot>
-  <slot class="date" name="date"></slot>
-  <slot class="search-button" name="search-button"></slot>
-</div>
+  <div class="query-menu">
+    <slot class="first" name="first"></slot>
+    <slot class="second" name="second"></slot>
+    <slot class="third" name="third"></slot>
+    <slot class="fourth" name="fourth"></slot>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'Querymenu'
-}
+  name: "Querymenu",
+};
 </script>
 
 <style lang="less" scoped>

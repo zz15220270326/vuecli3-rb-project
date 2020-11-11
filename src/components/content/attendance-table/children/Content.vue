@@ -1,11 +1,30 @@
 <template>
-<div class="content">
-  <!-- 根据月份刷新考勤表 -->
-  <!-- :show-header="false" -->
-  <Table border highlight-row ref="currentRowTable" :row-class-name="renderRow" :columns="dayList" :data="list1" size="small" />
-  <Table :show-header="false" border highlight-row ref="currentRowTable" :row-class-name="renderRow" :columns="dayList" :data="list2" size="small" />
-  <!-- <Table border :data="attdanceList" size="small" /> -->
-</div>
+  <div class="content">
+    <!-- 根据月份刷新考勤表 -->
+    <!-- :show-header="false" -->
+    <Table
+      v-if="list2.length === 0"
+      border
+      highlight-row
+      ref="currentRowTable"
+      :row-class-name="renderRow"
+      :columns="dayList"
+      :data="list1"
+      size="small"
+    />
+    <Table
+      v-else
+      border
+      highlight-row
+      ref="currentRowTable"
+      :row-class-name="renderRow"
+      :columns="dayList"
+      :data="list2"
+      size="small"
+    />
+    <!-- :show-header="false" -->
+    <!-- <Table border :data="attdanceList" size="small" /> -->
+  </div>
 </template>
 
 <script>
@@ -26,13 +45,13 @@ export default {
     }
   },
   methods: {
-    renderRow (row, index) {
+    renderRow(row, index) {
       if (index === 0) {
         return 'render-row'
       }
       return ''
     },
-    rowClick () {
+    rowClick() {
       /* @click.native="rowClick"  */
       console.log(this.$refs.currentRowTable.data)
     }

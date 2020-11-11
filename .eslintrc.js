@@ -13,6 +13,7 @@ module.exports = {
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    "quotes": [0, "single"],	// 禁用引号检查	引号类型 `` "" ''
     'vue/no-parsing-error': [2, { 'x-invalid-end-tag': false }]
   }
 }

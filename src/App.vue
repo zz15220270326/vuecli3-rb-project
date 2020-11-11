@@ -1,10 +1,9 @@
 <template>
-  <div id="app">
-    <router-view/>
+  <div id="langyun">
+    <router-view />
   </div>
 </template>
 
 <style lang="css">
-  @import"~@assets/style/base.css"
-  /* base css import */
+@import '~@assets/style/base.css';
 </style>

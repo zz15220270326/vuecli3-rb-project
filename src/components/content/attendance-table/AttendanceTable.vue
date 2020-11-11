@@ -1,21 +1,34 @@
 <template>
-<div class="attendance-table">
-  <Title :yearAndMonth="yearAndMonth" :identify="identify" />
-  <AttdanceReminder v-if="isShowCard" :detailInfo="detailInfo" :cardDate="cardDate" @closeCard="closeCard" />
-  <Content :dayList="dayList" :list1="weekDayList" :list2="attdanceList" />
-</div>
+  <div class="attendance-table">
+    <SelectMonth @selectMonth="selectMonth" />
+    <Title :yearAndMonth="yearAndMonth" :identify="identify" />
+    <AttdanceReminder
+      v-if="isShowCard"
+      :detailInfo="detailInfo"
+      :cardDate="cardDate"
+      :isShowCard="isShowCard"
+    />
+    <Content :dayList="dayList" :list1="weekDayList" :list2="attdanceList" />
+  </div>
 </template>
 
 <script>
+// select-month
+import SelectMonth from '@content/select-month/SelectMonth'
 // request
-import {getFullReport} from '@request/getAttendanceTableList'
-import {getAttdanceCheckInfo} from '@request/getAttdanceCheckInfo'
+import { getFullReport } from '@request/getAttendanceTableList'
+import { getAttdanceCheckInfo } from '@request/getAttdanceCheckInfo'
 // change-time-functions
-import {dateToMs, transformToYM, getDays, getWeekDays} from '@utils/changeTime'
-// pickColor
-import pickColor from '@utils/pickColor'
+import {
+  dateToMs,
+  transformToYM,
+  getDays,
+  getWeekDays
+} from '@utils/changeTime'
+// // pickColor
+// import pickColor from '@utils/pickColor'
 // store type
-import {GET_DEFAULT_YEAR, GET_DEFAULT_MONTH, GET_DAYS} from '@store/storeType'
+import { GET_DEFAULT_YEAR, GET_DEFAULT_MONTH, GET_DAYS } from '@store/storeType'
 // child-components
 import Title from './children/Title'
 import Content from './children/Content'
@@ -24,6 +37,7 @@ import AttdanceReminder from './children/AttdanceReminder'
 export default {
   name: 'AttendanceTable',
   components: {
+    SelectMonth,
     Title,
     Content,
     AttdanceReminder
@@ -48,38 +62,38 @@ export default {
     cardDate: ''
   }),
   computed: {
-    identify () {
+    identify() {
       return this.$store.state.identify
     },
-    storeSelectMonth () {
+    storeSelectMonth() {
       // return this.storeSelectMonth
       return this.$store.state.selectMonth
     },
-    yearAndMonth () {
+    yearAndMonth() {
       // '年-月'
       const time = this.storeSelectMonth
       const timestamp = dateToMs(time)
       return transformToYM(timestamp).toString()
     },
-    uid () {
+    uid() {
       // 虚拟存储的uid的值
       return this.$store.state.uid
     },
-    classIds () {
+    classIds() {
       // 虚拟存储classIds的值
       return this.$store.state.classIds
     }
   },
   methods: {
     // 设置标题中的年和月(created)
-    getYMDandDays () {
+    getYMDandDays() {
       // 加载默认的标题和天数
       this.year = this.$store.state.defaultYear
       this.month = this.$store.state.defaultMonth
       this.day = this.$store.state.defaultDay
       this.days = this.$store.state.days
     },
-    setYearAndMonth () {
+    setYearAndMonth() {
       // 把'年-月'转化成数组
       let ymArr = this.yearAndMonth.split('-')
       // 动态刷新标题
@@ -92,15 +106,13 @@ export default {
       this.$store.commit(GET_DAYS, days)
     },
     // 根据this.days动态刷新表格月份天数
-    setMonthDays () {
-      // 清空this.dayList()
-      // this.dayList = []
+    setMonthDays() {
       // 设置两个中间变量以及第一项的默认变量
       let daysArr = []
       let dayList = []
       let dayListDefault = {
         title: '姓名/日期',
-        key: 'username',
+        key: 'name',
         width: 80,
         fixed: 'left'
       }
@@ -108,30 +120,41 @@ export default {
         let dayInfo = {
           title: `${i + 1}`,
           key: `day${i + 1}`,
+          width: 60,
           className: 'table-title',
           render: (h, params) => {
             const row = params.row
-            const color = pickColor(row, i)
-            const text = row[`day${i + 1}`].desc
-            const {uid, date} = row[`day${i + 1}`]
-            return h('div', [
-              h('div', {
-                props: {
-                },
-                style: {
-                  color,
-                  'width': '2.6rem',
-                  'text-align': 'left',
-                  'font-size': '0.8rem',
-                  'padding': '0'
-                },
-                on: {
-                  click: async () => {
-                    this.handleShowCard(text, uid, date)
-                  }
-                }
-              }, text)
-            ])
+
+            if (row[`day${i + 1}`].desc) {
+              const text = row[`day${i + 1}`].desc
+              const { uid, date } = row[`day${i + 1}`]
+              return h('div', [
+                h(
+                  'div',
+                  {
+                    props: {},
+                    style: {
+                      color:
+                        row[`day${i + 1}`].existSpecial === 1
+                          ? 'orange'
+                          : '#666',
+                      width: '5rem',
+                      'text-align': 'left',
+                      'font-size': '0.8rem',
+                      padding: '0'
+                    },
+                    on: {
+                      click: async () => {
+                        if (row[`day${i + 1}`].existDetail !== 0) {
+                          this.handleShowCard(text, uid, date)
+                        }
+                      }
+                    }
+                  },
+                  text
+                )
+              ])
+            }
           }
         }
         daysArr.push(dayInfo)
@@ -143,7 +166,7 @@ export default {
       this.dayList = dayList
     },
     // 根据年-月-日设置星期
-    setMonthWeeks () {
+    setMonthWeeks() {
       // 设置两个中间变量以及第一项的默认变量
       let weeksInfo = {}
       let setWeekInfo = {}
@@ -163,47 +186,52 @@ export default {
       this.$store.dispatch('getWeekDayList', weekDayList)
       this.weekDayList = weekDayList
     },
-    handleRemind () {
+    handleRemind() {
       this.isRemind = !this.isRemind
     },
-    async handleShowCard (text, uid, date) {
-      if (text === '周日' || text === '周一' || text === '周二' || text === '周三' || text === '周四' || text === '周五' || text === '周六') {
-        return 0
-      } else if (text === '休') {
-        this.$Notice.success({
-          title: '温馨提示',
-          desc: '这一天休息哦'
-        })
-      } else {
-        this.cardDate = date
-        const {data} = await getAttdanceCheckInfo(uid, date)
-        this.detailInfo = data
-        this.isShowCard = true
+    selectMonth() {
+      console.log('selectMonth')
+      if (this.year !== '' && this.day !== '') {
+        this.getDefaultAttdenceList()
       }
     },
-    closeCard () {
-      console.log('closeCard')
-      this.isShowCard = false
+    async handleShowCard(text, uid, date) {
+      this.cardDate = date
+      const { data } = await getAttdanceCheckInfo(uid, date)
+      this.detailInfo = data
+      this.isShowCard = true
     },
     /**
      * 异步请求的方法
      */
-    async getFullReportList (uid, classIds, startTime, endTime, otherParams = {}) {
+    async getFullReportList(
+      uid,
+      classIds,
+      startTime,
+      endTime,
+      otherParams = {}
+    ) {
       // 122, '54', '2020-11-01', '2020-11-30'
-      const result = await getFullReport(uid, classIds, startTime, endTime, otherParams)
-      const {items} = result.data
+      const result = await getFullReport(
+        uid,
+        classIds,
+        startTime,
+        endTime,
+        otherParams
+      )
+      const info = result.data.items.data
       let daysArr = []
       let userInfo = []
       for (let day = 1; day <= this.days; day++) {
         daysArr.push(day)
       }
-      userInfo = await [...items]
+      userInfo = await [...info]
       const attdanceList = [...userInfo]
       this.$store.dispatch('getAttdanceList', attdanceList)
       this.weekDayList = this.$store.state.weekDayList
       this.attdanceList = this.$store.state.attdanceList
     },
-    getDefaultAttdenceList () {
+    getDefaultAttdenceList() {
       // 设置默认请求的参数, 发送响应请求
       const startTime = this.year + '-' + this.month + '-' + '01'
       const endTime = this.year + '-' + this.month + '-' + this.days
@@ -213,10 +241,10 @@ export default {
   /**
    * ***life-hooks***
    */
-  created () {
+  created() {
     const dayListDefault = {
       title: '姓名/日期',
-      key: 'username'
+      key: 'name'
     }
     this.dayList[0] = dayListDefault
     this.getYMDandDays()
@@ -225,23 +253,18 @@ export default {
     this.getDefaultAttdenceList()
     console.log('created')
   },
-  beforeMount () {
-  },
-  mounted () {
+  beforeMount() {},
+  mounted() {
     console.log('mounted')
   },
-  beforeUpdate () {
+  beforeUpdate() {
     this.setYearAndMonth()
     this.getYMDandDays()
-    // console.log(this.days)
     this.setMonthDays()
     this.setMonthWeeks()
-    // setTimeout(() => {
-    //   this.getDefaultAttdenceList()
-    // }, 300)
     console.log('beforeUpdate')
   },
-  updated () {
+  updated() {
     console.log('updated')
   }
 }
