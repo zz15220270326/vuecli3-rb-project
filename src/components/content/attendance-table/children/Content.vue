@@ -2,7 +2,7 @@
   <div class="content">
     <!-- 根据月份刷新考勤表 -->
     <!-- :show-header="false" -->
-    <Table
+    <!-- <Table
       v-if="list2.length === 0"
       border
       highlight-row
@@ -11,9 +11,9 @@
       :columns="dayList"
       :data="list1"
       size="small"
-    />
+    /> -->
     <Table
-      v-else
+      v-if="list2.length !== 0"
       border
       highlight-row
       ref="currentRowTable"

@@ -17,11 +17,15 @@ module.exports = {
       }
     }
   },
+  chainWebpack: config => {
+    // vue-cli3热更新(修复HMR)
+    config.resolve.symlinks(true) 
+   },
   devServer: {
-    port: 8080,
+    port: 5013,
     proxy: {
       '/api': {
-        target: 'http://192.168.31.227:6099',
+        target: 'http://192.168.31.227:50002',
         changeOrigin: true,
         // pathRewrite: {
         //   '^/api': '/mock'

@@ -40,5 +40,8 @@ export default {
   },
   getEndTime (state, endTime) {
     state.endTime = endTime
+  },
+  getIsShow (state, isShow) {
+    state.isShow = isShow
   }
 }

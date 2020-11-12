@@ -1,35 +1,26 @@
 <template>
   <div class="attendance-table">
     <SelectMonth @selectMonth="selectMonth" />
-    <Title :yearAndMonth="yearAndMonth" :identify="identify" />
-    <AttdanceReminder
-      v-if="isShowCard"
-      :detailInfo="detailInfo"
-      :cardDate="cardDate"
-      :isShowCard="isShowCard"
-    />
+    <Title :yearAndMonth="storeSelectMonth" :identify="identify" />
+    <AttdanceReminder :detailInfo="detailInfo" :cardDate="cardDate" />
     <Content :dayList="dayList" :list1="weekDayList" :list2="attdanceList" />
   </div>
 </template>
 
 <script>
-// select-month
-import SelectMonth from '@content/select-month/SelectMonth'
-// request
+// ? request
 import { getFullReport } from '@request/getAttendanceTableList'
 import { getAttdanceCheckInfo } from '@request/getAttdanceCheckInfo'
-// change-time-functions
-import {
-  dateToMs,
-  transformToYM,
-  getDays,
-  getWeekDays
-} from '@utils/changeTime'
-// // pickColor
+// ? change-time-functions
+import { getDays, getWeekDays } from '@utils/changeTime'
+// ? pickColor (useless now)
 // import pickColor from '@utils/pickColor'
-// store type
+// ? store type
 import { GET_DEFAULT_YEAR, GET_DEFAULT_MONTH, GET_DAYS } from '@store/storeType'
-// child-components
+// ? child-components
+// ? select-month
+import SelectMonth from '@content/select-month/SelectMonth'
+// ? other children
 import Title from './children/Title'
 import Content from './children/Content'
 import AttdanceReminder from './children/AttdanceReminder'
@@ -43,21 +34,20 @@ export default {
     AttdanceReminder
   },
   data: () => ({
-    // 展示的数据列表(data), 包括weekDayList和userInfo
+    // ? 展示的数据列表(data), 包括weekDayList和userInfo
     attdanceList: [],
-    // 把year month day的默认值设置为0, 然后再生命周期中获取
+    // ? 把year month day的默认值设置为0, 然后再生命周期中获取
     year: 0,
     month: 0,
     day: 0,
-    // 月份总共的天数
+    // ? 月份总共的天数
     days: 0,
-    // 月份天数对应的星期几
+    // ? 月份天数对应的星期几
     weekDayList: [],
-    // 获取的数据列表
+    // ? 获取的数据列表
     userInfo: [],
     dayList: [],
     requestList: [],
-    isShowCard: false,
     detailInfo: [],
     cardDate: ''
   }),
@@ -69,45 +59,39 @@ export default {
       // return this.storeSelectMonth
       return this.$store.state.selectMonth
     },
-    yearAndMonth() {
-      // '年-月'
-      const time = this.storeSelectMonth
-      const timestamp = dateToMs(time)
-      return transformToYM(timestamp).toString()
-    },
     uid() {
-      // 虚拟存储的uid的值
+      // ? 虚拟存储的uid的值
       return this.$store.state.uid
     },
     classIds() {
-      // 虚拟存储classIds的值
+      // ? 虚拟存储classIds的值
       return this.$store.state.classIds
     }
   },
   methods: {
-    // 设置标题中的年和月(created)
+    // ! 设置标题中的年和月(created)
     getYMDandDays() {
-      // 加载默认的标题和天数
+      // ? 从store中获取默认的年 月 日 以及年月天数
       this.year = this.$store.state.defaultYear
       this.month = this.$store.state.defaultMonth
       this.day = this.$store.state.defaultDay
       this.days = this.$store.state.days
     },
-    setYearAndMonth() {
-      // 把'年-月'转化成数组
-      let ymArr = this.yearAndMonth.split('-')
-      // 动态刷新标题
+    updateTitleAndDays() {
+      // ? 把'年-月'转化成数组
+      let ymArr = this.storeSelectMonth.split('-')
+      // ? 动态刷新标题
       this.$store.commit(GET_DEFAULT_YEAR, ymArr[0])
       this.$store.commit(GET_DEFAULT_MONTH, ymArr[1])
-      // 获取月份中的天数并填入到表格中
+      // ? 获取月份中的天数并填入到表格中
       let year = ymArr[0] * 1
       let month = ymArr[1] * 1
       const days = getDays(year, month)
       this.$store.commit(GET_DAYS, days)
     },
-    // 根据this.days动态刷新表格月份天数
+    // ! 根据this.days动态渲染表格标题以及要显示的表格内容设置(render function)
     setMonthDays() {
-      // 设置两个中间变量以及第一项的默认变量
+      // ? 设置两个中间变量以及第一项的默认变量
       let daysArr = []
       let dayList = []
       let dayListDefault = {
@@ -124,20 +108,21 @@ export default {
           className: 'table-title',
           render: (h, params) => {
             const row = params.row
-
-            if (row[`day${i + 1}`].desc) {
-              const text = row[`day${i + 1}`].desc
+            if (row[`day${i + 1}`].name !== undefined) {
+              const text = row[`day${i + 1}`].name
               const { uid, date } = row[`day${i + 1}`]
-              return h('div', [
+              return [
                 h(
-                  'div',
+                  'nav',
                   {
                     props: {},
                     style: {
                       color:
-                        row[`day${i + 1}`].existSpecial === 1
-                          ? 'orange'
-                          : '#666',
+                        row[`day${i + 1}`].existSpecial === 0
+                          ? '#666'
+                          : row[`day${i + 1}`].existSpecial === 1
+                          ? 'red'
+                          : 'orange',
                       width: '5rem',
                       'text-align': 'left',
                       'font-size': '0.8rem',
@@ -145,7 +130,8 @@ export default {
                     },
                     on: {
                       click: async () => {
-                        if (row[`day${i + 1}`].existDetail !== 0) {
+                        if (row[`day${i + 1}`].existDetail === 1) {
+                          console.log('click')
                           this.handleShowCard(text, uid, date)
                         }
                       }
@@ -153,7 +139,7 @@ export default {
                   },
                   text
                 )
-              ])
+              ]
             }
           }
         }
@@ -174,7 +160,7 @@ export default {
       // for 获取月份天数, 获取'周几'进行渲染
       for (let i = 0; i < this.days; i++) {
         weeksInfo[`day${i + 1}`] = {
-          desc: getWeekDays(this.year + '-' + this.month + '-' + `${i + 1}`)
+          name: getWeekDays(this.year + '-' + this.month + '-' + `${i + 1}`)
         }
       }
       // 存储默认第一行数据
@@ -186,35 +172,38 @@ export default {
       this.$store.dispatch('getWeekDayList', weekDayList)
       this.weekDayList = weekDayList
     },
-    handleRemind() {
-      this.isRemind = !this.isRemind
-    },
     selectMonth() {
+      /* 从SelectMonth子组件中传递过来的事件 */
+      this.updateTitleAndDays()
+      this.getYMDandDays()
+      this.setMonthDays()
+      this.setMonthWeeks()
       console.log('selectMonth')
       if (this.year !== '' && this.day !== '') {
-        this.getDefaultAttdenceList()
+        this.getFullReportList()
       }
     },
+    /**
+     * ! 异步请求的方法
+     */
+    // ! 是否要显示并请求弹窗卡片
     async handleShowCard(text, uid, date) {
       this.cardDate = date
       const { data } = await getAttdanceCheckInfo(uid, date)
       this.detailInfo = data
-      this.isShowCard = true
+      this.$store.commit('getIsShow', true)
+      setTimeout(() => {
+        this.$store.commit('getIsShow', false)
+      }, 800)
     },
-    /**
-     * 异步请求的方法
-     */
-    async getFullReportList(
-      uid,
-      classIds,
-      startTime,
-      endTime,
-      otherParams = {}
-    ) {
-      // 122, '54', '2020-11-01', '2020-11-30'
+    // ! 请求获取"考勤明细"表格
+    async getFullReportList() {
+      const startTime = this.year + '-' + this.month + '-' + '01'
+      const endTime = this.year + '-' + this.month + '-' + this.days
+      const otherParams = {}
       const result = await getFullReport(
-        uid,
-        classIds,
+        this.uid,
+        this.classIds,
         startTime,
         endTime,
         otherParams
@@ -226,20 +215,21 @@ export default {
         daysArr.push(day)
       }
       userInfo = await [...info]
+      // console.log(userInfo)
       const attdanceList = [...userInfo]
       this.$store.dispatch('getAttdanceList', attdanceList)
       this.weekDayList = this.$store.state.weekDayList
       this.attdanceList = this.$store.state.attdanceList
-    },
-    getDefaultAttdenceList() {
-      // 设置默认请求的参数, 发送响应请求
+    }
+    /* getDefaultAttdenceList() {
+      // ! 设置默认请求的参数, 发送响应请求(封装getFullReportList方法)
       const startTime = this.year + '-' + this.month + '-' + '01'
       const endTime = this.year + '-' + this.month + '-' + this.days
       this.getFullReportList(this.uid, this.classIds, startTime, endTime)
-    }
+    } */
   },
   /**
-   * ***life-hooks***
+   * !! ***life-hooks*** !!
    */
   created() {
     const dayListDefault = {
@@ -250,7 +240,7 @@ export default {
     this.getYMDandDays()
     this.setMonthDays()
     this.setMonthWeeks()
-    this.getDefaultAttdenceList()
+    this.getFullReportList()
     console.log('created')
   },
   beforeMount() {},
@@ -258,10 +248,6 @@ export default {
     console.log('mounted')
   },
   beforeUpdate() {
-    this.setYearAndMonth()
-    this.getYMDandDays()
-    this.setMonthDays()
-    this.setMonthWeeks()
     console.log('beforeUpdate')
   },
   updated() {

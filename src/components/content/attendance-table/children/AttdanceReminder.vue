@@ -1,6 +1,6 @@
 <template>
   <!-- 用卡片实现 -->
-  <Modal :title="cardDate" v-model="isShowCard" :mask-closable="disClosed">
+  <Modal :title="cardDate" v-model="isShow" :mask-closable="disClosed">
     <Card v-cloak class="card">
       <Timeline>
         <div v-for="(item, index) in detailInfo" :key="index" class="content">
@@ -21,7 +21,10 @@
 export default {
   name: 'AttdanceReminder',
   data: () => ({
-    disClosed: false
+    // ? 当弹窗后用户要关闭弹窗后才能进行其他操作
+    disClosed: false,
+    // ? 是否显示弹窗(这里由store控制弹窗的显示)
+    isShow: false
   }),
   props: {
     detailInfo: {
@@ -31,13 +34,16 @@ export default {
     cardDate: {
       type: String,
       default: ''
-    },
-    isShowCard: {
-      type: Boolean,
-      default: false
     }
   },
-  methods: {}
+  methods: {
+    getIsShow() {
+      this.isShow = this.$store.state.isShow
+    }
+  },
+  beforeUpdate() {
+    this.getIsShow()
+  }
 }
 </script>
 

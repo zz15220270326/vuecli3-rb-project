@@ -36,7 +36,9 @@ const state = {
   teacherName: '',
   // 设置开始的年月日, 结束的年月日
   startTime: '',
-  endTime: ''
+  endTime: '',
+  // 是否显示弹窗
+  isShow: false,
 }
 
 const store = new Vuex.Store({
