@@ -1,8 +1,8 @@
 <template>
   <div class="choosable-menu">
-    <Dropdown split-button type="primary" >
+    <Dropdown split-button type="primary">
       <Button type="default">
-        {{menuTitle}}
+        {{ menuTitle }}
         <Icon type="ios-arrow-down" />
       </Button>
       <DropdownMenu slot="list">
@@ -11,7 +11,7 @@
           :key="index"
           @click.native="handleSelect(index)"
         >
-          {{item.className}}
+          {{ item.className }}
         </DropdownItem>
       </DropdownMenu>
     </Dropdown>
@@ -20,33 +20,31 @@
 
 <script>
 // store-types
-import {GET_CLASS_IDS} from '@/store/storeType'
+import { GET_CLASS_IDS } from '@/store/storeType'
 
 export default {
   name: 'ChoosableMenu',
   props: {
     menuItems: {
       type: Array,
-      default () {
-        return []
-      }
+      default: () => []
     }
   },
-  data () {
+  data() {
     return {
-      menuTitle: '全园教师'
+      menuTitle:
+        this.menuItems.length > 0 ? this.menuItems[0].className : '全员教师'
     }
   },
   methods: {
-    handleSelect (key) {
+    handleSelect(key) {
       this.menuTitle = this.menuItems[key].className
       const classIds = this.menuItems[key].id
       this.$store.commit(GET_CLASS_IDS, classIds)
     }
   },
   /* life-hooks */
-  created () {
-  }
+  created() {}
 }
 </script>
 

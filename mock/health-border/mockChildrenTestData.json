@@ -1,0 +1,70 @@
+{
+  "msg": "Success",
+  "code": 200,
+  "data": [
+    {
+      "number": 1,
+      "class_name": "朗云小班",
+      "name": "鞠婧祎",
+      "temperatue": 36,
+      "health_status": "正常",
+      "date": "2020-12-01"
+    },
+    {
+      "number": 2,
+      "class_name": "朗云小班",
+      "name": "嗷嗷嗷",
+      "temperatue": 36.6,
+      "health_status": "正常",
+      "date": "2020-11-26"
+    },
+    {
+      "number": 3,
+      "class_name": "朗云小班",
+      "name": "Administrator",
+      "temperatue": 36.2,
+      "health_status": "正常",
+      "date": "2020-11-23"
+    },
+    {
+      "number": 4,
+      "class_name": "朗云小班",
+      "name": "Admindd",
+      "temperatue": 36,
+      "health_status": "正常",
+      "date": "2020-11-16"
+    },
+    {
+      "number": 5,
+      "class_name": "朗云小班",
+      "name": "飒飒撒",
+      "temperatue": 36,
+      "health_status": "正常",
+      "date": "2020-11-12"
+    },
+    {
+      "number": 6,
+      "class_name": "朗云小班",
+      "name": "漩涡博人",
+      "temperatue": 36,
+      "health_status": "正常",
+      "date": "2020-11-12"
+    },
+    {
+      "number": 7,
+      "class_name": "病号连",
+      "name": "异常账号1",
+      "temperatue": 40,
+      "health_status": "异常",
+      "date": "2020-11-10"
+    },
+    {
+      "number": 8,
+      "class_name": "病号连",
+      "name": "异常账号1",
+      "temperatue": 39,
+      "health_status": "异常",
+      "date": "2020-11-10"
+    }
+  ]
+}

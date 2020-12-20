@@ -1,0 +1,26 @@
+{
+  "msg": "Success",
+  "code": 200,
+  "data": [
+    {
+      "class_type": "小班",
+      "attdance_students": 0,
+      "absence_students": 1
+    },
+    {
+      "class_type": "中班",
+      "attdance_students": 1,
+      "absence_students": 19
+    },
+    {
+      "class_type": "小班",
+      "attdance_students": 0,
+      "absence_students": 2
+    },
+    {
+      "class_type": "小班",
+      "attdance_students": 1,
+      "absence_students": 22
+    }
+  ]
+}

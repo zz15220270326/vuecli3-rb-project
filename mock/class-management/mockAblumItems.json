@@ -1,0 +1,65 @@
+{
+  "msg": "查询成功",
+  "code": 0,
+  "data": {
+    "ablums_list": [
+      {
+        "img_url_list": [
+          "http://t.static.langlangyun.com/ClassAlbum/4ed52b0739e3eb0730149ae1dd00dbaa?imageView2/1/w/399/h/196",
+          "http://t.static.langlangyun.com/ClassAlbum/4ed52b0739e3eb0730149ae1dd00dbaa?imageView2/1/w/238/h/196",
+          "http://t.static.langlangyun.com/Handheld_ClassAlbum/2a68c385fb7c6b4560c51c42eaf17d08?imageView2/1/w/238/h/196",
+          "http://t.static.langlangyun.com/Handheld_ClassAlbum/905f998c6bdb3400c29f486c6287c22d?imageView2/1/w/238/h/196"
+        ],
+        "total": 4,
+        "author": "321",
+        "current_class": "朗云小班"
+      },
+      {
+        "img_url_list": [
+          "http://t.static.langlangyun.com/ClassAlbum/0c621989cd4b40211989c055892d1104?imageView2/1/w/238/h/196",
+          "http://t.static.langlangyun.com/ClassAlbum/4ed52b0739e3eb0730149ae1dd00dbaa?imageView2/1/w/238/h/196",
+          "http://t.static.langlangyun.com/ClassAlbum/0114548f247b97e705a9d3623c344c18?imageView2/1/w/238/h/196",
+          "http://t.static.langlangyun.com/ClassAlbum/fe9a8aa2c43d16f46433c555e1e687d8?imageView2/1/w/238/h/196"
+        ],
+        "total": 17,
+        "author": "测试",
+        "current_class": "朗云小班"
+      },
+      {
+        "img_url_list": [
+          "http://t.static.langlangyun.com/ClassAlbum/0c621989cd4b40211989c055892d1104?imageView2/1/w/238/h/196",
+          "http://t.static.langlangyun.com/ClassAlbum/4ed52b0739e3eb0730149ae1dd00dbaa?imageView2/1/w/238/h/196",
+          "http://t.static.langlangyun.com/ClassAlbum/0114548f247b97e705a9d3623c344c18?imageView2/1/w/238/h/196",
+          "http://t.static.langlangyun.com/ClassAlbum/fe9a8aa2c43d16f46433c555e1e687d8?imageView2/1/w/238/h/196"
+        ],
+        "total": 4,
+        "author": "硕士",
+        "current_class": "朗云小班"
+      },
+      {
+        "img_url_list": [
+          "http://t.static.langlangyun.com/ClassAlbum/0d6418dd6c008e20554a27a0f33c2868?imageView2/1/w/238/h/196",
+          "http://t.static.langlangyun.com/ClassAlbum/3377998041006499b5edaf0ca641b429?imageView2/1/w/238/h/196",
+          "http://t.static.langlangyun.com/ClassAlbum/94b593eb9cf64e79d558b0ebef73406b?imageView2/1/w/238/h/196"
+        ],
+        "total": 3,
+        "author": "555",
+        "current_class": "计算机201"
+      },
+      {
+        "img_url_list": [
+          "http://t.static.langlangyun.com/Handheld_ClassAlbum/93ed1c713929571e467226367739f3cc?imageView2/1/w/238/h/196",
+          "http://t.static.langlangyun.com/Handheld_ClassAlbum/7521aa548875a29226662744638df00f?imageView2/1/w/238/h/196",
+          "http://t.static.langlangyun.com/Handheld_ClassAlbum/93d40f1a202c1afc1b809f0b960d0d16?imageView2/1/w/238/h/196",
+          "http://t.static.langlangyun.com/Handheld_ClassAlbum/83fe6f8d5c331f98a4691c9e9065704e?imageView2/1/w/238/h/196",
+          "http://t.static.langlangyun.com/Handheld_ClassAlbum/407597d9a525772217dd84844451b9c7?imageView2/1/w/238/h/196",
+          "http://t.static.langlangyun.com/Handheld_ClassAlbum/407597d9a525772217dd84844451b9c7?imageView2/1/w/238/h/196",
+          "http://t.static.langlangyun.com/Handheld_ClassAlbum/13a9b476c077d97c31a098466cd13da5?imageView2/1/w/238/h/196"
+        ],
+        "total": 3,
+        "author": "555",
+        "current_class": "计算机201"
+      }
+    ]
+  }
+}

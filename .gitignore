@@ -1,7 +1,8 @@
 .DS_Store
 node_modules
 /dist
-
+# ignore markdown
+.md
 
 # local env files
 .env.local
@@ -21,3 +22,7 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+# yarn lock
+*.lock
+

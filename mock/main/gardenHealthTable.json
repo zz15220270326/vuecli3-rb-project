@@ -1,0 +1,27 @@
+{
+  "msg": "Success",
+  "code": 200,
+  "data": [
+    {
+      "number": 1,
+      "class_name": "朗云小班",
+      "health_count": 0,
+      "sick_count": "1 人",
+      "total_count": 1
+    },
+    {
+      "number": 2,
+      "class_name": "朗云3班中班级",
+      "health_count": 0,
+      "sick_count": "0 人",
+      "total_count": 0
+    },
+    {
+      "number": 3,
+      "class_name": "计算机201",
+      "health_count": 0,
+      "sick_count": "0 人",
+      "total_count": 0
+    }
+  ]
+}

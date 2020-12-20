@@ -1,89 +1,119 @@
 <template>
   <div class="home">
-    <nav-bar>
-      <div slot="left">{{ platformName }}</div>
-      <div slot="center"></div>
-      <div slot="right">
-        <UserLogout :mock-username="mockUsername" :mock-img-url="mockImgUrl" />
-      </div>
-    </nav-bar>
-    <home-menu>
-      <div slot="menu-logo" class="menu-logo">
-        <img :src="myLogoUrl" alt="" />
-      </div>
-      <div slot="menu-content" class="menu-content"></div>
-    </home-menu>
-    <home-content />
+    <home-top
+      :platformName="platformName"
+      :mockUsername="mockUsername"
+      :mockImgUrl="$store.state.avatar"
+    />
+    <Layout>
+      <Header>
+        <Menu mode="horizontal">
+          <MenuItem
+            v-for="(item, index) in routerList"
+            :key="index"
+            :name="item.path"
+            @click.native="clickMenuTop(index, item.path)"
+          >
+            <img
+              v-if="item.iconUrl !== ''"
+              class="router-icon"
+              :src="item.iconUrl"
+              alt=""
+            />
+            <span>
+              {{ item.showName }}
+            </span>
+          </MenuItem>
+        </Menu>
+      </Header>
+      <Layout :style="{ padding: '0 50px' }">
+        <Breadcrumb :style="{ margin: '16px 0' }">
+          <BreadcrumbItem>
+            <img :src="$store.state.projectIcon" alt="" />
+          </BreadcrumbItem>
+          <BreadcrumbItem>{{ activeTitle }}</BreadcrumbItem>
+        </Breadcrumb>
+        <Content
+          :style="{ padding: '24px 0', minHeight: '280px', background: '#fff' }"
+        >
+          <Layout>
+            <!-- <Sider hide-trigger :style="{ background: '#fff' }"> -->
+            <!-- collapsible -->
+            <Sider
+              collapsible
+              :collapsed-width="80"
+              v-model="isCollapsed"
+              :style="{ background: '#fff' }"
+            >
+              <Menu
+                active-name="1-3"
+                theme="light"
+                width="auto"
+                :open-names="['1']"
+              >
+                <MenuItem
+                  v-for="(item, index) in childrenList"
+                  :key="index"
+                  :name="item.name"
+                  @click.native="clickMenuLeft(index, item.path)"
+                >
+                  {{ item.showName }}
+                </MenuItem>
+              </Menu>
+            </Sider>
+            <Content>
+              <home-content />
+            </Content>
+          </Layout>
+        </Content>
+      </Layout>
+      <Footer class="layout-footer-center">2011-2016 &copy; TalkingData</Footer>
+    </Layout>
   </div>
 </template>
 
 <script>
-// 1. import components
-// 1-1 common / content
-import NavBar from '@common/nav-bar/NavBar'
-import UserLogout from '@content/user-logout/UserLogout'
-// 1-2 child-components
-import HomeMenu from './child-components/HomeMenu'
-import HomeContent from './child-components/HomeContent'
-// 2. request: (none)
-// 3. times-function
-import { dateToMs, transformToYMD, getDays } from '@utils/changeTime'
-// 4. store-types
-import {
-  GET_DEFAULT_YEAR,
-  GET_DEFAULT_MONTH,
-  GET_DEFAULT_DAY,
-  GET_DAYS
-} from '@store/storeType'
+// ? 1. import components
+// ? 1-1 common
+// import UserLogout from '@common/user-logout/UserLogout'
+// ? 1-2 child-components
+const HomeTop = () => import('./content/HomeTop')
+// import HomeMenu from './content/HomeMenu'
+import HomeContent from './content/HomeContent'
+// ? 2. request: (none auth-routers)
+
+// ? mixins
+import HOME_MIXINS from '@mixins/Common/HomeMixin'
 
 export default {
   name: 'Home',
   components: {
-    // common / content
-    NavBar,
-    UserLogout,
-    // child-components
-    HomeMenu,
+    // ? common
+    // UserLogout,
+    // ? child-components
+    HomeTop,
+    // HomeMenu,
     HomeContent
   },
-  data() {
-    return {
-      platformName: '智慧幼教管理平台',
-      mockImgUrl: this.$store.state.avatar,
-      mockUsername: '陆园长',
-      myLogoUrl: this.$store.state.projectIcon,
-      profileList: [],
-      profileListTitle: [],
-      getMonth: '2020-11'
-    }
-  },
-  methods: {
-    initYMD() {
-      // '当前的: 年-月-日'
-      const datestamp = dateToMs(Date())
-      // 把'年-月'转化成数组
-      let ymdArr = transformToYMD(datestamp)
-        .toString()
-        .split('-')
-      // sync store
-      this.$store.commit(GET_DEFAULT_YEAR, ymdArr[0])
-      this.$store.commit(GET_DEFAULT_MONTH, ymdArr[1])
-      this.$store.commit(GET_DEFAULT_DAY, ymdArr[2])
-      this.$store.commit(GET_DAYS, getDays(ymdArr[0] * 1, ymdArr[1] * 1))
-    }
-  },
-  /***
-   * life-hooks
-   */
-  created() {
-    this.initYMD()
-    // console.log('Home Created ! ')
-  }
+  mixins: [HOME_MIXINS],
+  methods: {}
 }
 </script>
 
 <style lang="less" scoped>
 .home {
-  background-color: red;
+  color: #fff;
+  .ivu-layout-header {
+    // background-color: #36adea;
+    background-color: #fff;
+    .router-icon {
+      height: 1.2rem;
+      width: 1.2rem;
+      margin-right: 0.5rem;
+    }
+    .ivu-layout-sider-trigger {
+      background-color: #fff;
+    }
+  }
 }
 </style>

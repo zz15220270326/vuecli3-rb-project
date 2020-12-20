@@ -1,0 +1,58 @@
+{
+  "msg": "Success",
+  "code": 200,
+  "data": {
+    "class_list": [
+      {
+        "class_name": "朗云小班",
+        "class_id": 1
+      },
+      {
+        "class_name": "朗云3班中班级",
+        "class_id": 2
+      },
+      {
+        "class_name": "计算机201",
+        "class_id": 3
+      }
+    ],
+    "items": [
+      {
+        "class_id": 1,
+        "should_arrive": "20",
+        "is_arrived": "0",
+        "absense": "18",
+        "thing_holiday": "2",
+        "sink_holiday": "0",
+        "attdance_present": "0%",
+        "absense_present": "90%",
+        "thing_holiday_present": "10%",
+        "sink_holiday_present": "0%"
+      },
+      {
+        "class_id": 2,
+        "should_arrive": "2",
+        "is_arrived": "0",
+        "absense": "2",
+        "thing_holiday": "0",
+        "sink_holiday": "0",
+        "attdance_present": "0%",
+        "absense_present": "100%",
+        "thing_holiday_present": "0%",
+        "sink_holiday_present": "0%"
+      },
+      {
+        "class_id": 3,
+        "should_arrive": "1",
+        "is_arrived": "0",
+        "absense": "1",
+        "thing_holiday": "0",
+        "sink_holiday": "0",
+        "attdance_present": "0%",
+        "absense_present": "100%",
+        "thing_holiday_present": "0%",
+        "sink_holiday_present": "0%"
+      }
+    ]
+  }
+}

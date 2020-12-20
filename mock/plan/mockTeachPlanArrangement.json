@@ -1,0 +1,22 @@
+{
+  "msg": "Success",
+  "code": 200,
+  "data": {
+    "morning_plan": [
+      {
+        "plan_time": "07:00—09:00",
+        "plan_content": "唱跳rap"
+      },
+      {
+        "plan_time": "07:00—09:00",
+        "plan_content": "篮球"
+      }
+    ],
+    "afternoon_plan": [
+      {
+        "plan_time": "15:00-16:00",
+        "plan_content": "左刺拳 右鞭腿"
+      }
+    ]
+  }
+}

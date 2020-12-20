@@ -1,0 +1,34 @@
+{
+  "msg": "Success",
+  "code": 200,
+  "data": [
+    {
+      "info": "default-class",
+      "key": 0
+    },
+    {
+      "info": "class1",
+      "key": 1
+    },
+    {
+      "info": "class2",
+      "key": 2
+    },
+    {
+      "info": "class3",
+      "key": 3
+    },
+    {
+      "info": "class4",
+      "key": 4
+    },
+    {
+      "info": "class5",
+      "key": 5
+    },
+    {
+      "info": "class6",
+      "key": 6
+    }
+  ]
+}

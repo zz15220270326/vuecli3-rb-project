@@ -1,0 +1,66 @@
+{
+  "msg": "Success",
+  "code": 200,
+  "data": [
+        {
+          "name": "早餐",
+          "content": {
+            "day1": "bb",
+            "day2": "",
+            "day3": "",
+            "day4": "",
+            "day5": ""
+          }
+        },
+        {
+          "name": "早点",
+          "content": {
+            "day1": "",
+            "day2": "",
+            "day3": "",
+            "day4": "",
+            "day5": ""
+          }
+        },
+        {
+          "name": "午餐",
+          "content": {
+            "day1": "",
+            "day2": "",
+            "day3": "",
+            "day4": "",
+            "day5": ""
+          }
+        },
+        {
+          "name": "午点",
+          "content": {
+            "day1": "",
+            "day2": "",
+            "day3": "",
+            "day4": "",
+            "day5": ""
+          }
+        },
+        {
+          "name": "晚餐",
+          "content": {
+            "day1": "",
+            "day2": "",
+            "day3": "",
+            "day4": "",
+            "day5": ""
+          }
+        },
+        {
+          "name": "晚餐建议",
+          "content": {
+            "day1": "",
+            "day2": "",
+            "day3": "",
+            "day4": "",
+            "day5": ""
+          }
+        }
+      ] 
+}

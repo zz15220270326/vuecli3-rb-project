@@ -1,0 +1,48 @@
+{
+  "msg": "Success",
+  "code": 200,
+  "data": [
+    {
+      "number": 1,
+      "name": "陆园长",
+      "temperatue": 37,
+      "health_status": "正常",
+      "date": "2020-12-04"
+    },
+    {
+      "number": 2,
+      "name": "张红11",
+      "temperatue": 37,
+      "health_status": "正常",
+      "date": "2020-12-04"
+    },
+    {
+      "number": 3,
+      "name": "测试刘老师",
+      "temperatue": 36.3,
+      "health_status": "正常",
+      "date": "2020-11-24"
+    },
+    {
+      "number": 4,
+      "name": "测试刘主任",
+      "temperatue": 36.2,
+      "health_status": "正常",
+      "date": "2020-11-24"
+    },
+    {
+      "number": 5,
+      "name": "测试人员",
+      "temperatue": 36.1,
+      "health_status": "正常",
+      "date": "2020-11-24"
+    },
+    {
+      "number": 6,
+      "name": "新加老师",
+      "temperatue": 39,
+      "health_status": "异常",
+      "date": "2020-11-11"
+    }
+  ]
+}

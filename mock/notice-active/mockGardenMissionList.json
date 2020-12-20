@@ -1,0 +1,82 @@
+{
+  "msg": "Success",
+  "code": 200,
+  "data": [
+    {
+      "title": "默认内容标题",
+      "content": "23123",
+      "charger": "陆园长",
+      "avatar": "http://t.static.langlangyun.com/pcUpload/a39c0c2a17a3c3579a04ef45b1a8fee7?imageView2/1/w/161/h/161",
+      "type": "园务通知",
+      "time": "2020年11月27日 09:39:28",
+      "read_status": "0/12",
+      "img": [""],
+      "is_checked": false
+    },
+    {
+      "title": "轮机认识实习第六篇",
+      "content": "斯蒂芬",
+      "charger": "陆园长",
+      "avatar": "http://t.static.langlangyun.com/pcUpload/a39c0c2a17a3c3579a04ef45b1a8fee7?imageView2/1/w/161/h/161",
+      "type": "园务通知",
+      "time": "2020年11月27日 09:37:50",
+      "read_status": "0/12",
+      "img": ["http://t.static.langlangyun.com/pcUpload/fbd36cbb1c9be799e7608f528d32137e?imageView2/1/w/161/h/161"],
+      "is_checked": false
+    },
+    {
+      "title": "幼儿园国庆节放假通知",
+      "content": "ghv",
+      "charger": "水水水水水水水水",
+      "type": "园务通知",
+      "time": "2020年11月09日 11:21:19",
+      "read_status": "0/12",
+      "img": [""],
+      "is_checked": false
+    },
+    {
+      "title": "刚刚好",
+      "content": "23123",
+      "charger": "陆园长",
+      "avatar": "http://t.static.langlangyun.com/pcUpload/a39c0c2a17a3c3579a04ef45b1a8fee7?imageView2/1/w/161/h/161",
+      "type": "园务通知",
+      "time": "2020年11月09日 11:18:09",
+      "read_status": "0/12",
+      "img": [""],
+      "is_checked": false
+    },
+    {
+      "title": "ui包括九年",
+      "content": "尊敬的各位家长",
+      "charger": "陆园长",
+      "avatar": "http://t.static.langlangyun.com/pcUpload/a39c0c2a17a3c3579a04ef45b1a8fee7?imageView2/1/w/161/h/161",
+      "type": "园务通知",
+      "time": "2020年11月07日 15:34:59",
+      "read_status": "0/12",
+      "img": [""],
+      "is_checked": false
+    },
+    {
+      "title": "台风来袭幼儿园通知及温馨提示",
+      "content": "23123",
+      "charger": "陆园长",
+      "avatar": "http://t.static.langlangyun.com/pcUpload/a39c0c2a17a3c3579a04ef45b1a8fee7?imageView2/1/w/161/h/161",
+      "type": "园务通知",
+      "time": "2020年11月07日 15:34:31",
+      "read_status": "0/12",
+      "img": [""],
+      "is_checked": false
+    },
+    {
+      "title": "别把迟到当小事，伤害超出你的想象！",
+      "content": "23123",
+      "charger": "陆园长",
+      "avatar": "http://t.static.langlangyun.com/pcUpload/a39c0c2a17a3c3579a04ef45b1a8fee7?imageView2/1/w/161/h/161",
+      "type": "园务通知",
+      "time": "2020年10月30日 09:26:13",
+      "read_status": "0/12",
+      "img": [""],
+      "is_checked": false
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "msg": "Success",
+  "code": 200,
+  "data": [
+    {
+      "class_name": "朗云小班",
+      "should_arrive": 20,
+      "is_arrived": 1,
+      "absense": 19,
+      "attdance_present": "5%"
+    },
+    {
+      "class_name": "朗云3班中班级",
+      "should_arrive": 2,
+      "is_arrived": 0,
+      "absense": 2,
+      "attdance_present": "0%"
+    },
+    {
+      "class_name": "计算机201",
+      "should_arrive": 1,
+      "is_arrived": 0,
+      "absense": 1,
+      "attdance_present": "0%"
+    }
+  ]
+}

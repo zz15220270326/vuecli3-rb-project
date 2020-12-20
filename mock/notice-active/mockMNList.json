@@ -1,0 +1,82 @@
+{
+  "msg": "Success",
+  "code": 200,
+  "data": [
+    {
+      "title": "打开主管通知",
+      "content": "打开主管通知打开主管通知打开主管通知打开主管通知",
+      "charger": "教育局管理人",
+      "avatar": "http://t.aservice.langlangyun.com/langyun/www/public/static/workplace/images/user_icon_default.png?imageView2/1/w/161/h/161",
+      "type": "主管部门通知",
+      "time": "2020年12月01日 17:49",
+      "read_status": "未设置",
+      "img": [""],
+      "is_checked": false
+    },
+    {
+      "title": "我有一个梦想",
+      "content": "打开主管通知打开主管通知打开主管通知打开主管通知",
+      "charger": "爱的管理员",
+      "avatar": "http://t.aservice.langlangyun.com/langyun/www/public/static/workplace/images/user_icon_default.png?imageView2/1/w/161/h/161",
+      "type": "主管部门通知",
+      "time": "2020年12月01日 17:48",
+      "read_status": "未设置",
+      "img": ["http://t.static.langlangyun.com/pcUpload/fbd36cbb1c9be799e7608f528d32137e?imageView2/1/w/161/h/161"],
+      "is_checked": false
+    },
+    {
+      "title": "幼儿园国庆节放假通知",
+      "content": "a'a'a'a'a'a'a'a'a'aaaaaaaaaaaaaaaaa'a'a'a",
+      "charger": "漩涡鸣人",
+      "type": "主管部门通知",
+      "time": "2020年12月01日 17:01",
+      "read_status": "未设置",
+      "img": [""],
+      "is_checked": false
+    },
+    {
+      "title": "刚刚好",
+      "content": "23123",
+      "charger": "路飞",
+      "avatar": "http://t.aservice.langlangyun.com/langyun/www/public/static/workplace/images/user_icon_default.png?imageView2/1/w/161/h/161",
+      "type": "主管部门通知",
+      "time": "2020年12月01日 11:58",
+      "read_status": "未设置",
+      "img": [""],
+      "is_checked": false
+    },
+    {
+      "title": "ui包括九年",
+      "content": "尊敬的各位家长",
+      "charger": "工藤新一",
+      "avatar": "http://t.aservice.langlangyun.com/langyun/www/public/static/workplace/images/user_icon_default.png?imageView2/1/w/161/h/161",
+      "type": "主管部门通知",
+      "time": "2020年11月27日 17:39",
+      "read_status": "未设置",
+      "img": [""],
+      "is_checked": false
+    },
+    {
+      "title": "降温提醒",
+      "content": "c'c'c'c'c'c'c'c'c'c",
+      "charger": "灰原哀",
+      "avatar": "http://t.aservice.langlangyun.com/langyun/www/public/static/workplace/images/user_icon_default.png?imageView2/1/w/161/h/161",
+      "type": "主管部门通知",
+      "time": "2020年11月11日 10:47",
+      "read_status": "未设置",
+      "img": [""],
+      "is_checked": false
+    },
+    {
+      "title": "朗朗对外展示幼儿园",
+      "content": "朗朗对外展示幼儿园",
+      "charger": "蔡徐坤",
+      "avatar": "http://t.aservice.langlangyun.com/langyun/www/public/static/workplace/images/user_icon_default.png?imageView2/1/w/161/h/161",
+      "type": "主管部门通知",
+      "time": "2020年11月10日 14:25",
+      "read_status": "未设置",
+      "img": [""],
+      "is_checked": false
+    }
+  ]
+}

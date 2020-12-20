@@ -1,0 +1,30 @@
+{
+  "msg": "Success",
+  "code": 200,
+  "data": [
+    {
+      "number": 1,
+      "grade": "小班",
+      "class_name": "计算机201",
+      "children_count": 100,
+      "entry_time": "2020-09-08",
+      "teachers": "小冯老师，开发姚老师，卡卡西老师"
+    },
+    {
+      "number": 2,
+      "grade": "大班",
+      "class_name": "朗云3班中班级",
+      "children_count": 52,
+      "entry_time": "2020-01-04",
+      "teachers": "新加老师，admin，小冯老师，卡卡西老师，开发韩老师"
+    },
+    {
+      "number": 3,
+      "grade": "中班",
+      "class_name": "朗云小班",
+      "children_count": 20,
+      "entry_time": "2018-05-16",
+      "teachers": "新加老师，admin，wan，韩老师，小冯老师，开发姚老师，前端李老师，卡卡西老师，王老师呀，水门老师，开发韩老师，黄振炎老师"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "status": "Success",
+  "msg": "查询成功",
+  "data": {
+    "total_page": 5,
+    "albums": [
+      {
+        "page": 1,
+        "imgs": [
+          "http://t.static.langlangyun.com/ClassAlbum/348ee47ce822b1d5b0d1c98835ddde61",
+          "http://t.static.langlangyun.com/ClassAlbum/e8ee54120e48e70fd78eb564a53cf19a",
+          "http://t.static.langlangyun.com/ClassAlbum/94b593eb9cf64e79d558b0ebef73406b",
+          "http://t.static.langlangyun.com/ClassAlbum/3377998041006499b5edaf0ca641b429",
+          "http://t.static.langlangyun.com/ClassAlbum/3377998041006499b5edaf0ca641b429",
+          "http://t.static.langlangyun.com/ClassAlbum/b9a64670955b8453f5ae6fb7410c0d3d",
+          "http://t.static.langlangyun.com/ClassAlbum/f24a142dab976eca70e0414eb679b4ed",
+          "http://t.static.langlangyun.com/ClassAlbum/ef40a3935e0a17e37d89b590a3d461e5",
+          "http://t.static.langlangyun.com/ClassAlbum/3cb9cb91d0950207293573ecdad109df",
+          "http://t.static.langlangyun.com/ClassAlbum/086ff1357248c48af9b64d9d209e9725",
+          "http://t.static.langlangyun.com/ClassAlbum/fe49c25c9bd940022a28e7d9a3bf168c",
+          "http://t.static.langlangyun.com/ClassAlbum/a7fb416ea836aa57fde4249c15d771d3"
+        ]
+      },
+      {
+        "page": 2,
+        "imgs": [
+          "http://t.static.langlangyun.com/ClassAlbum/bc67b397a2550023c41a1ad9ad2aa8ac",
+          "http://t.static.langlangyun.com/ClassAlbum/e731499665b090dbe28a7de8dd5b1c20",
+          "http://t.static.langlangyun.com/ClassAlbum/3998d0a54bd450fc06fec0b9a3c1e050",
+          "",
+          "http://t.static.langlangyun.com/ClassAlbum/cc57ff4ec04cee61820a8eda425ae808",
+          "http://t.static.langlangyun.com/ClassAlbum/dbb794c8f5a14bafaa74594ae8e9bc77",
+          "",
+          "http://t.static.langlangyun.com/ClassAlbum/16b8856bc9ef5ba6a4f1a0f26562606d",
+          "http://t.static.langlangyun.com/ClassAlbum/ebe621246587079663890bc1bf6dcea5"
+        ]
+      },
+      {
+        "page": 3,
+        "imgs": [
+          "http://t.static.langlangyun.com/ClassAlbum/1b53956f1d2571ce2e80d5440bbebe47",
+          "",
+          "",
+          "http://t.static.langlangyun.com/ClassAlbum/a5f611066655089c7cc2bfa1531fa78c",
+          "http://t.static.langlangyun.com/ClassAlbum/ba8845f33a787ebd2e4453f50eb2b8ae",
+          "http://t.static.langlangyun.com/ClassAlbum/fc5ed353c06999472822ad6ff9b57c65",
+          "",
+          "http://t.static.langlangyun.com/ClassAlbum/0c621989cd4b40211989c055892d1104",
+          "http://t.static.langlangyun.com/ClassAlbum/80326e8407223575010b4a4246ec6468",
+          "",
+          "http://t.static.langlangyun.com/ClassAlbum/fe9a8aa2c43d16f46433c555e1e687d8"
+        ]
+      },
+      {},
+      {}
+    ]
+  }
+}

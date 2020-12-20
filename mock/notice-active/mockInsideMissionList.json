@@ -1,0 +1,83 @@
+{
+  "msg": "Success",
+  "code": 200,
+  "data": [
+    {
+      "title": "新闻",
+      "content": "1、排队8小时，就为一杯奶茶？武汉街头排千米长队，有人当场买凳子\n2、即将进入海域段隧道施工！穗莞深城际机前段首台盾构成功下线\n3、下半年来气温新低！冷空气再出手，过程最低降至12℃\n4、陆丰警方悬赏通缉18名涉毒逃犯！举报1人奖励8",
+      "charger": "陆园长",
+      "avatar": "http://t.static.langlangyun.com/pcUpload/a39c0c2a17a3c3579a04ef45b1a8fee7?imageView2/1/w/161/h/161",
+      "type": "园内通知",
+      "time": "2020年12月03日 18:57",
+      "read_status": "6/34",
+      "img": [""],
+      "is_checked": false
+    },
+    {
+      "title": "aaaaaaaaaaaaaa",
+      "content": "嗷嗷嗷",
+      "charger": "陆园长",
+      "avatar": "http://t.static.langlangyun.com/pcUpload/a39c0c2a17a3c3579a04ef45b1a8fee7?imageView2/1/w/161/h/161",
+      "type": "园内通知",
+      "time": "2020年11月11日 10:42",
+      "read_status": "5/27",
+      "img": ["http://t.static.langlangyun.com/pcUpload/fbd36cbb1c9be799e7608f528d32137e?imageView2/1/w/161/h/161"],
+      "is_checked": false
+    },
+    {
+      "title": "看kan1",
+      "content": "嘎嘎嘎",
+      "charger": "卡卡西老师",
+      "avatar": "http://t.static.langlangyun.com/pcUpload/79712cbb9ee67b69eb4482d21678a874?imageView2/1/w/161/h/161",
+      "type": "园内通知",
+      "time": "2020年11月09日 11:37",
+      "read_status": "3/27",
+      "img": [""],
+      "is_checked": false
+    },
+    {
+      "title": "刚刚好",
+      "content": "23123",
+      "charger": "陆园长",
+      "avatar": "http://t.static.langlangyun.com/pcUpload/a39c0c2a17a3c3579a04ef45b1a8fee7?imageView2/1/w/161/h/161",
+      "type": "园内通知",
+      "time": "2020年11月09日 11:18:09",
+      "read_status": "0/12",
+      "img": [""],
+      "is_checked": false
+    },
+    {
+      "title": "弟弟",
+      "content": "尊敬的各位家长",
+      "charger": "卡卡西老师",
+      "avatar": "http://t.static.langlangyun.com/pcUpload/79712cbb9ee67b69eb4482d21678a874?imageView2/1/w/161/h/161",
+      "type": "园内通知",
+      "time": " 2020年11月09日 11:22",
+      "read_status": "1/27",
+      "img": [""],
+      "is_checked": false
+    },
+    {
+      "title": "园内通知",
+      "content": "硕士是",
+      "charger": "卡卡西老师",
+      "avatar": "http://t.static.langlangyun.com/pcUpload/79712cbb9ee67b69eb4482d21678a874?imageView2/1/w/161/h/161",
+      "type": "园内通知",
+      "time": "2020年11月09日 11:21",
+      "read_status": "10/27",
+      "img": [""],
+      "is_checked": false
+    },
+    {
+      "title": "看kan1",
+      "content": "23123",
+      "charger": "陆园长",
+      "avatar": "http://t.static.langlangyun.com/pcUpload/a39c0c2a17a3c3579a04ef45b1a8fee7?imageView2/1/w/161/h/161",
+      "type": "园内通知",
+      "time": " 2020年10月23日 18:05",
+      "read_status": "0/12",
+      "img": [""],
+      "is_checked": false
+    }
+  ]
+}

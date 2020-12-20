@@ -1,0 +1,48 @@
+{
+  "msg": "Success",
+  "code": 200,
+  "data": [
+    {
+      "name": "张红11",
+      "temperatue": 37,
+      "health_status": "正常",
+      "symbol": "无",
+      "date": "2020-12-04"
+    },
+    {
+      "name": "陆园长",
+      "temperatue": 37,
+      "health_status": "正常",
+      "symbol": "无",
+      "date": "2020-12-04"
+    },
+    {
+      "name": "测试鞠老师",
+      "temperatue": 40,
+      "health_status": "异常",
+      "symbol": "有发热、咳嗽等症状",
+      "date": "2020-12-01"
+    },
+    {
+      "name": "测试人员",
+      "temperatue": 36.1,
+      "health_status": "正常",
+      "symbol": "无",
+      "date": "2020-11-24"
+    },
+    {
+      "name": "飒飒飒飒",
+      "temperatue": 39,
+      "health_status": "异常",
+      "symbol": "有发热、咳嗽等症状",
+      "date": "2020-11-16"
+    },
+    {
+      "name": "卡卡西老师",
+      "temperatue": 39,
+      "health_status": "异常",
+      "symbol": "有发热、咳嗽等症状",
+      "date": "2020-11-16"
+    }
+  ]
+}

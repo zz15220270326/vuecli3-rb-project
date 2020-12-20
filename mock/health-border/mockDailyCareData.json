@@ -1,0 +1,127 @@
+{
+  "msg": "Success",
+  "code": 200,
+  "data": [
+    {
+      "current_class": "朗云小班",
+      "name": "鞠婧祎",
+      "check_type": "午检",
+      "temperatue": 36,
+      "health_status": "正常",
+      "symbol": "",
+      "handle_type": "正常入园",
+      "registrant": "测试鞠老师",
+      "date": "2020-12-01"
+    },
+    {
+      "current_class": "朗云小班",
+      "name": "嗷嗷嗷",
+      "check_type": "晨检",
+      "temperatue": 39,
+      "health_status": "需要观察",
+      "symbol": "发热",
+      "handle_type": "正常入园",
+      "registrant": "卡卡西老师",
+      "date": "2020-11-16"
+    },
+    {
+      "current_class": "朗云小班",
+      "name": "王小明",
+      "check_type": "午检",
+      "temperatue": 37,
+      "health_status": "正常",
+      "symbol": "",
+      "handle_type": "正常入园",
+      "registrant": "卡卡西老师",
+      "date": "2020-11-16"
+    },
+    {
+      "current_class": "朗云小班",
+      "name": "里巴巴",
+      "check_type": "午检",
+      "temperatue": 37,
+      "health_status": "正常",
+      "symbol": "",
+      "handle_type": "正常入园",
+      "registrant": "测试鞠老师",
+      "date": "2020-11-14"
+    },
+    {
+      "current_class": "朗云小班",
+      "name": "尘埃",
+      "check_type": "午检",
+      "temperatue": 37,
+      "health_status": "正常",
+      "symbol": "",
+      "handle_type": "正常入园",
+      "registrant": "测试鞠老师",
+      "date": "2020-11-12"
+    },
+    {
+      "current_class": "朗云小班",
+      "name": "鞠婧祎",
+      "check_type": "午检",
+      "temperatue": 40,
+      "health_status": "传染病风险",
+      "symbol": "红眼",
+      "handle_type": "离园回家",
+      "registrant": "测试鞠老师",
+      "date": "2020-11-11"
+    },
+    {
+      "current_class": "朗云小班",
+      "name": "鞠婧祎",
+      "check_type": "午检",
+      "temperatue": 38,
+      "health_status": "需要观察",
+      "symbol": "发热",
+      "handle_type": "正常入园",
+      "registrant": "张老师",
+      "date": "2020-11-11"
+    },
+    {
+      "current_class": "朗云小班",
+      "name": "Admindd",
+      "check_type": "午检",
+      "temperatue": 39,
+      "health_status": "需要观察",
+      "symbol": "发热",
+      "handle_type": "正常入园",
+      "registrant": "测试鞠老师",
+      "date": "2020-11-11"
+    },
+    {
+      "current_class": "朗云小班",
+      "name": "木大木大木大",
+      "check_type": "午检",
+      "temperatue": 37,
+      "health_status": "正常",
+      "symbol": "",
+      "handle_type": "正常入园",
+      "registrant": "测试鞠老师",
+      "date": "2020-11-10"
+    },
+    {
+      "current_class": "朗云小班",
+      "name": "洪卓立",
+      "check_type": "午检",
+      "temperatue": 37,
+      "health_status": "正常",
+      "symbol": "",
+      "handle_type": "正常入园",
+      "registrant": "测试鞠老师",
+      "date": "2020-11-10"
+    },
+    {
+      "current_class": "朗云小班",
+      "name": "赖爸爸",
+      "check_type": "午检",
+      "temperatue": 37,
+      "health_status": "正常",
+      "symbol": "",
+      "handle_type": "正常入园",
+      "registrant": "水门老师",
+      "date": "2020-11-09"
+    }
+  ]
+}

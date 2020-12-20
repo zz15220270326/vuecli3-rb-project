@@ -1,0 +1,114 @@
+{
+  "msg": "Success",
+  "code": 200,
+  "data": [
+    {
+      "number": 1,
+      "date": "2020-08-21",
+      "name": "钟情呀",
+      "current_class": "朗云小班",
+      "check_type": "晨检",
+      "temperature": "38",
+      "health_status": "需要观察",
+      "symbol": "发热",
+      "handle_type": "离园回家",
+      "registrant": "陆园长"
+    },
+    {
+      "number": 2,
+      "date": "2020-08-21",
+      "name": "漩涡博人",
+      "current_class": "langyun班级",
+      "check_type": "晨检",
+      "temperature": "39",
+      "health_status": "需要观察",
+      "symbol": "其他",
+      "handle_type": "正常入园",
+      "registrant": "王老师呀"
+    },
+    {
+      "number": 3,
+      "date": "2020-08-21",
+      "name": "漩涡博人",
+      "current_class": "langyun班级",
+      "check_type": "晨检",
+      "temperature": "40",
+      "health_status": "需要观察",
+      "symbol": "发热",
+      "handle_type": "离园回家",
+      "registrant": "张老师发现了bug"
+    },
+    {
+      "number": 4,
+      "date": "2020-08-21",
+      "name": "李大嘴",
+      "current_class": "朗云小班",
+      "check_type": "晨检",
+      "temperature": "37",
+      "health_status": "正常",
+      "symbol": "",
+      "handle_type": "正常入园",
+      "registrant": "夏东海"
+    },
+    {
+      "number": 5,
+      "date": "2020-08-21",
+      "name": "钟情呀",
+      "current_class": "朗云小班",
+      "check_type": "晨检",
+      "temperature": "38",
+      "health_status": "需要观察",
+      "symbol": "发热",
+      "handle_type": "离园回家",
+      "registrant": "陆园长"
+    },
+    {
+      "number": 6,
+      "date": "2020-08-21",
+      "name": "费玉清",
+      "current_class": "朗云小班",
+      "check_type": "晨检",
+      "temperature": "38",
+      "health_status": "传染病风险",
+      "symbol": "发热",
+      "handle_type": "离园回家",
+      "registrant": "张老师"
+    },
+    {
+      "number": 7,
+      "date": "2020-08-21",
+      "name": "周杰伦",
+      "current_class": "朗云小班",
+      "check_type": "晨检",
+      "temperature": "36.5",
+      "health_status": "正常",
+      "symbol": "",
+      "handle_type": "正常入园",
+      "registrant": "张老师"
+    },
+    {
+      "number": 8,
+      "date": "2020-08-21",
+      "name": "Jack",
+      "current_class": "朗云小班",
+      "check_type": "晨检",
+      "temperature": "36.5",
+      "health_status": "正常",
+      "symbol": "",
+      "handle_type": "正常入园",
+      "registrant": "张老师"
+    },
+    {
+      "number": 9,
+      "date": "2020-08-21",
+      "name": "测试正常账号",
+      "current_class": "朗云小班",
+      "check_type": "晨检",
+      "temperature": "37",
+      "health_status": "正常",
+      "symbol": "",
+      "handle_type": "正常入园",
+      "registrant": "张老师"
+    }
+  ]
+}

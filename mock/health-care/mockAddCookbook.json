@@ -1,0 +1,64 @@
+{
+  "msg": "Success",
+  "code": 200,
+  "data": 
+    {
+      "menuType": [
+        {
+          "name": "早餐",
+          "is_checked": true,
+          "menu_list": [
+            {
+            "content": ""
+            }
+          ]
+        },
+        {
+          "name": "早点",
+          "is_checked": true,
+          "menu_list": [
+            {
+            "content": ""
+            }
+          ]
+        },
+        {
+          "name": "午餐",
+          "is_checked": true,
+          "menu_list": [
+            {
+            "content": ""
+            }
+          ]
+        },
+        {
+          "name": "午点",
+          "is_checked": true,
+          "menu_list": [
+            {
+            "content": ""
+            }
+          ]
+        },
+        {
+          "name": "晚餐",
+          "is_checked": true,
+          "menu_list": [
+            {
+            "content": ""
+            }
+          ]
+        },
+        {
+          "name": "晚餐建议",
+          "is_checked": true,
+          "menu_list": [
+            {
+            "content": ""
+            }
+          ]
+        }
+      ]
+    }
+  
+}

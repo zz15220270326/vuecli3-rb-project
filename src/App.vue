@@ -4,6 +4,6 @@
   </div>
 </template>
 
-<style lang="css">
+<style lang="css" scoped>
 @import '~@assets/style/base.css';
 </style>

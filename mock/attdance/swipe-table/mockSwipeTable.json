@@ -1,0 +1,81 @@
+{
+  "msg": "Success",
+  "code": 200,
+  "data": [
+    {
+      "number": 1,
+      "teacher_name": "测试鞠老师",
+      "card": "人脸闸机",
+      "swipe_date": "2020-11-26",
+      "swipe_time": "15:57:06"
+    },
+    {
+      "number": 2,
+      "teacher_name": "卡卡西老师",
+      "card": "10005483",
+      "swipe_date": "2020-11-26",
+      "swipe_time": "10:27:38"
+    },
+    {
+      "number": 3,
+      "teacher_name": "卡卡西老师",
+      "card": "10005483",
+      "swipe_date": "2020-11-26",
+      "swipe_time": "10:27:30"
+    },
+    {
+      "number": 4,
+      "teacher_name": "测试鞠老师",
+      "card": "人脸闸机",
+      "swipe_date": "2020-11-26",
+      "swipe_time": "10:08:27"
+    },
+    {
+      "number": 5,
+      "teacher_name": "水门老师",
+      "card": "",
+      "swipe_date": "2020-11-19",
+      "swipe_time": "11:07:24"
+    },
+    {
+      "number": 6,
+      "teacher_name": "卡卡西老师",
+      "card": "10005483",
+      "swipe_date": "2020-11-07",
+      "swipe_time": "16:18:43"
+    },
+    {
+      "number": 7,
+      "teacher_name": "卡卡西老师",
+      "card": "10005483",
+      "swipe_date": "2020-11-07",
+      "swipe_time": "16:18:43"
+    },
+    {
+      "number": 8,
+      "teacher_name": "卡卡西老师",
+      "card": "10005483",
+      "swipe_date": "2020-11-07",
+      "swipe_time": "16:18:32"
+    },
+    {
+      "number": 9,
+      "teacher_name": "卡卡西老师",
+      "card": "10005483",
+      "swipe_date": "2020-11-07",
+      "swipe_time": "16:18:31"
+    },{
+      "number": 10,
+      "teacher_name": "卡卡西老师",
+      "card": "10005483",
+      "swipe_date": "2020-11-07",
+      "swipe_time": "16:17:12"
+    },{
+      "number": 11,
+      "teacher_name": "卡卡西老师",
+      "card": "10005483",
+      "swipe_date": "2020-11-07",
+      "swipe_time": "16:17:10"
+    }
+  ]
+}

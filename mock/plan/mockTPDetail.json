@@ -1,0 +1,33 @@
+{
+  "msg": "Success",
+  "code": 200,
+  "data": [
+    {
+      "noon": "上午",
+      "time": "07:00-08:00",
+      "day1": "day1 arrange",
+      "day2": "hahaha",
+      "day3": "",
+      "day4": "",
+      "day5": "last arrange"
+    },
+    {
+      "noon": "上午",
+      "time": "09:00-10:00",
+      "day1": "mock day1 09:00-10:00",
+      "day2": "aaaa",
+      "day3": "esfsf",
+      "day4": "",
+      "day5": "e"
+    },
+    {
+      "noon": "下午",
+      "time": "13:30-14:30",
+      "day1": "mock day1 09:00-10:00",
+      "day2": "mm",
+      "day3": "",
+      "day4": "27149",
+      "day5": "reverse"
+    }
+  ]
+}

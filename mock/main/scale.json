@@ -1,0 +1,14 @@
+{
+  "msg": "Success",
+  "code": 200,
+  "data": {
+    "gender_scale": {
+      "male": 19,
+      "female": 4
+    },
+    "nation_scale": {
+      "normal": 23,
+      "specail": 0
+    }
+  }
+}

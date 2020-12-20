@@ -1,0 +1,76 @@
+{
+  "msg": "Success",
+  "code": 200,
+  "data": [
+    {
+      "title": "标题",
+      "content": "也一样",
+      "charger": "陆园长",
+      "avatar": "http://t.static.langlangyun.com/pcUpload/a39c0c2a17a3c3579a04ef45b1a8fee7?imageView2/1/w/161/h/161",
+      "type": "班级通知",
+      "time": "2020年11月17日 10:43",
+      "read_status": "5/16",
+      "img": ["http://t.static.langlangyun.com/pcUpload/ac534c095b6b4fc150b7c2f1773c2168?imageView2/1/w/200/h/115"]
+    },
+    {
+      "title": "天凉加衣",
+      "content": "天凉加衣",
+      "charger": "陆园长",
+      "avatar": "http://t.static.langlangyun.com/pcUpload/a39c0c2a17a3c3579a04ef45b1a8fee7?imageView2/1/w/161/h/161",
+      "type": "班级通知",
+      "time": "2020年11月16日 11:11",
+      "read_status": "2/16",
+      "img": ["http://t.static.langlangyun.com/pcUpload/ff4a47c6534a4030ad2d4ff65f8309fe?imageView2/1/w/200/h/115"]
+    },
+    {
+      "title": "哦你好",
+      "content": "自以为是",
+      "charger": "卡卡西老师",
+      "avatar": "http://t.static.langlangyun.com/pcUpload/a39c0c2a17a3c3579a04ef45b1a8fee7?imageView2/1/w/161/h/161",
+      "type": "班级通知",
+      "time": "2020年11月09日 11:21:19",
+      "read_status": "0/12",
+      "img": ["http://t.static.langlangyun.com/pcUpload/13c2e1f0aacbfe06cefcaee5ad0f6704?imageView2/1/w/200/h/115"]
+    },
+    {
+      "title": "刚刚好",
+      "content": "23123",
+      "charger": "卡卡西老师",
+      "avatar": "http://t.static.langlangyun.com/pcUpload/a39c0c2a17a3c3579a04ef45b1a8fee7?imageView2/1/w/161/h/161",
+      "type": "班级通知",
+      "time": "2020年11月16日 10:43",
+      "read_status": "0/12",
+      "img": ["http://t.static.langlangyun.com/Notice/519cf40e9b855dba45a88460ba141eb0?imageView2/1/w/200/h/115"]
+    },
+    {
+      "title": "2222",
+      "content": "目前正处于深圳的春夏秋冬四季之交，早晚气温变化很大，是流感的高发季节，且流感性感冒主要通过飞沫传播，有高度的传染性，为了全体员工的健康着想，提醒各位同事应做好以下预防工作：\n  1、熟悉昼夜温差及时添衣\n  2、锻炼身体提高自身免疫力\n  3、多喝水作息规律身体有保障\n  4、减少到人员密集的公共场所活动\n  5、办公室卫生：做到垃圾不过夜， 下班时自觉把自己的垃圾带到楼梯间的大垃圾桶内，没有垃圾桶的同事，可到前台领取哦[快来]~  \n    [广播]特别注意： 已经感冒了的同事， 每天上班时来前台测量体温，工作期间请戴好口罩[感冒]，做好个人的防护措施，避免同事之间相互传染；情况严重者可申请调休在家休养。",
+      "charger": "韩老师",
+      "avatar": "http://t.static.langlangyun.com/pcUpload/861799fc2018e8fdb8dbb378942dfe55?imageView2/1/w/161/h/161",
+      "type": "班级通知",
+      "time": "2020年11月16日 10:43",
+      "read_status": "0/12",
+      "img": [""]
+    },
+    {
+      "title": "台风来袭幼儿园通知及温馨提示",
+      "content": "23123",
+      "charger": "陆园长",
+      "avatar": "http://t.static.langlangyun.com/pcUpload/a39c0c2a17a3c3579a04ef45b1a8fee7?imageView2/1/w/161/h/161",
+      "type": "班级通知",
+      "time": "2020年11月16日 10:43",
+      "read_status": "0/12",
+      "img": ["http://t.static.langlangyun.com/Notice%2Fef6a6391170d3b2124912811b7ca58db?imageView2/1/w/200/h/115"]
+    },
+    {
+      "title": "别把迟到当小事，伤害超出你的想象！",
+      "content": "23123",
+      "charger": "陆园长",
+      "avatar": "http://t.static.langlangyun.com/pcUpload/a39c0c2a17a3c3579a04ef45b1a8fee7?imageView2/1/w/161/h/161",
+      "type": "班级通知",
+      "time": "2020年11月11日 10:43",
+      "read_status": "0/12",
+      "img": [""]
+    }
+  ]
+}

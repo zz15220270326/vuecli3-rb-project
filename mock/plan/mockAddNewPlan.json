@@ -1,0 +1,15 @@
+{
+  "msg": "查询成功",
+  "status": "Success",
+  "code": 0,
+  "data": {
+    "start_time": "00:00",
+    "end_time": "01:00",
+    "arrange_time": [
+      {
+        "time": "12:30-13:30",
+        "name": "开始计划"
+      }
+    ]
+  }
+}

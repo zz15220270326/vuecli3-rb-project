@@ -1,0 +1,27 @@
+{
+  "msg": "Success",
+  "code": 200,
+  "data": [
+    {
+      "number": 1,
+      "class_name": "朗云小班",
+      "type": "中班",
+      "teacher_count": 13,
+      "children_count": 20
+    },
+    {
+      "number": 2,
+      "class_name": "朗云3班中班级",
+      "type": "大班",
+      "teacher_count": 5,
+      "children_count": 2
+    },
+    {
+      "number": 3,
+      "class_name": "计算机201",
+      "type": "小班",
+      "teacher_count": 3,
+      "children_count": 1
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "msg": "Success",
+  "code": 0,
+  "data": [
+    {
+      "title": "概览",
+      "checked": true,
+      "children": [
+        {
+          "title": "概况总览",
+          "checked": true
+        },
+        {
+          "title": "手机APP基础功能",
+          "checked": true
+        }
+      ]
+    },
+    {
+      "title": "幼儿档案",
+      "checked": true,
+      "children": [
+        {
+          "title": "管理幼儿信息",
+          "checked": true
+        },
+        {
+          "title": "查看幼儿",
+          "checked": true
+        }
+      ]
+    },
+    {
+      "title": "班级信息",
+      "checked": true,
+      "children": [
+        {
+          "title": "管理班级信息",
+          "checked": true
+        },
+        {
+          "title": "查看班级信息",
+          "checked": true
+        }
+      ]
+    },
+    {
+      "title": "职工信息",
+      "checked": false,
+      "children": [
+        {
+          "title": "添加教师",
+          "checked": true
+        },
+        {
+          "title": "查看教师",
+          "checked": true
+        },
+        {
+          "title": "职位权限管理",
+          "checked": true
+        },
+        {
+          "title": "创建教师风采",
+          "checked": false
+        },
+        {
+          "title": "查看教师风采",
+          "checked": false
+        }
+      ]
+    }
+  ]
+}

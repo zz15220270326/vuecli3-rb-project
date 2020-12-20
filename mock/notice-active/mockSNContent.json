@@ -1,0 +1,70 @@
+{
+  "msg": "Success",
+  "code": 200,
+  "data": [
+    {
+      "title": "默认系统消息标题",
+      "outer": "外面内容",
+      "avatar": "http://t.static.langlangyun.com/Notice/4390d5c2dfb58d064fbcf0ab03f5ffc1?imageView2/1/w/200/h/115",
+      "content": "默认系统消息内容",
+      "time": "2020年12月13日 15:43",
+      "user": "zz",
+      "icon": "https://dss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2601900707,917050054&fm=26&gp=0.jpg",
+      "imgs": []
+    },
+    {
+      "title": "系统消息",
+      "outer": "哈哈哈哈哈",
+      "avatar": "http://t.static.langlangyun.com/Notice/519cf40e9b855dba45a88460ba141eb0?imageView2/1/w/200/h/115",
+      "content": "是u苏hi书似乎",
+      "time": "2020年11月09日 11:40",
+      "user": "zz",
+      "icon": "http://t.static.langlangyun.com/pcUpload/7fc672033791d198e286ea87607ce96f?imageView2/1/w/161/h/161",
+      "imgs": []
+    },
+    {
+      "title": "注意事项",
+      "outer": "not all content",
+      "avatar": "http://t.static.langlangyun.com/pcUpload/bdfa761056cf3a6de6f98b3353bd4349?imageView2/1/w/200/h/115",
+      "content": "目前正处于深圳的春夏秋冬四季之交，早晚气温变化很大，是流感的高发季节，且流感性感冒主要通过飞沫传播，有高度的传染性，为了全体员工的健康着想，提醒各位同事应做好以下预防工作： 1、熟悉昼夜温差及时添衣 2、锻炼身体提高自身免疫力 3、多喝水作息规律身体有保障 4、减少到人员密集的公共场所活动 5、办公室卫生：做到垃圾不过夜， 下班时自觉把自己的垃圾带到楼梯间的大垃圾桶内，没有垃圾桶的同事，可到前台领取哦[快来]~ [广播]特别注意： 已经感冒了的同事， 每天上班时来前台测量体温，工作期间请戴好口罩[感冒]，做好个人的防护措施，避免同事之间相互传染；情况严重者可申请调休在家休养。",
+      "time": "2020年11月09日 11:25",
+      "user": "zz",
+      "icon": "",
+      "imgs": [
+        "http://t.static.langlangyun.com/ueImage/kh9zgeg8_6qnfioawwqll5fa8b6a9d8986.png"
+      ]
+    },
+    {
+      "title": "测试标题",
+      "outer": "哈哈哈",
+      "avatar": "http://t.static.langlangyun.com/pcUpload/bdfa761056cf3a6de6f98b3353bd4349?imageView2/1/w/200/h/115",
+      "content": "嘤嘤嘤",
+      "time": "2020年10月30日 10:55",
+      "user": "topseten",
+      "icon": "http://t.static.langlangyun.com/pcUpload/7fc672033791d198e286ea87607ce96f?imageView2/1/w/161/h/161",
+      "imgs": [
+        "http://t.static.langlangyun.com/ueImage/kh9zgeg8_6qnfioawwqll5fa8b6a9d8986.png"
+      ]
+    },
+    {
+      "title": "测试标题",
+      "outer": "哈哈哈",
+      "avatar": "http://t.static.langlangyun.com/pcUpload/bdfa761056cf3a6de6f98b3353bd4349?imageView2/1/w/200/h/115",
+      "content": "嘤嘤嘤",
+      "time": "2020年10月30日 10:55",
+      "user": "topseten",
+      "icon": "http://t.static.langlangyun.com/pcUpload/7fc672033791d198e286ea87607ce96f?imageView2/1/w/161/h/161",
+      "imgs": [""]
+    },
+    {
+      "title": "You Have Only One Life",
+      "outer": "an English article",
+      "avatar": "http://t.static.langlangyun.com/Notice%2Fef6a6391170d3b2124912811b7ca58db?imageView2/1/w/200/h/115",
+      "content": "There are moments in life when you miss someone so much that you just want to pick them from your dreams and hug them for real! Dream what you want to dream;go where you want to go;be what you want to be,because you have only one life and one chance to do all the things you want to do.\n\nMay you have enough happiness to make you sweet,enough trials to make you strong,enough sorrow to keep you human,enough hope to make you happy? Always put yourself in others’shoes.If you feel that it hurts you,it probably hurts the other person, too.\n\nThe happiest of people don’t necessarily have the best of everything;they just make the most of everything that comes along their way.Happiness lies for those who cry,those who hurt, those who have searched,and those who have tried,for only they can appreciate the importance of people\n\nwho have touched their lives.Love begins with a smile,grows with a kiss and ends with a tear.The brightest future will always be based on a forgotten past, you can’t go on well in lifeuntil you let go of your past failures and heartaches.\n\nWhen you were born,you were crying and everyone around you was smiling.Live your life so that when you die,you're the one who is smiling and everyone around you is crying.\n\nPlease send this message to those people who mean something to you,to those who have touched your life in one way or another,to those who make you smile when you really need it,to those that make you see the brighter side of things when you are really down,to those who you want to let them know that you appreciate their friendship.And if you don’t, don’t worry,nothing bad will happen to you,you will just miss out on the opportunity to brighten someone’s day with this message.",
+      "time": " 2020年10月23日 10:09",
+      "user": "topseten",
+      "icon": "http://t.static.langlangyun.com/pcUpload/7fc672033791d198e286ea87607ce96f?imageView2/1/w/161/h/161",
+      "imgs": [""]
+    }
+  ]
+}
